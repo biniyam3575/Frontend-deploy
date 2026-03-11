@@ -3,7 +3,6 @@ import { SlLocationPin } from "react-icons/sl";
 import { BiCaretDown } from "react-icons/bi";
 import flag from '../../assets/icons/image.png'; 
 import cart1 from '../../assets/icons/cart.png';
-import logo from '../../assets/icons/Amazon_logo.png'
 import classes from './Header.module.css'; 
 import { Link } from "react-router";
 import { useContext, useState } from "react";
@@ -28,7 +27,7 @@ const Header = () => {
           {/* Logo */}
           <div className={classes.header_logo_container}>
             <Link to="/">
-              <img className={classes.logo} src={logo} alt="amazon logo" />
+              <img className={classes.logo} src='https://pngimg.com/uploads/amazon/amazon_PNG11.png' alt="amazon logo" />
             </Link>
           </div>
 
