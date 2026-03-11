@@ -1,0 +1,82 @@
+.footer {
+  background-color: #232f3e;
+  color: #dddddd;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer_links {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-bottom: 40px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.column h4 {
+  color: white;
+  margin-bottom: 5px;
+}
+
+.column a {
+  color: #cccccc;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.column a:hover {
+  text-decoration: underline;
+}
+
+.footer_bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-top: 1px solid #3a4553;
+  padding-top: 20px;
+}
+
+.logo {
+  width: 80px;
+  filter: brightness(0) invert(1);
+}
+
+.footer_copyright {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 20px;
+  color: #999;
+}
+.lang_buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.lang_buttons button:hover {
+  border-color: #ffffff;
+}
+
+.flag_icon {
+  width: 18px;    /* Adjust based on your file's native size */
+  height: auto;
+  margin-right: 8px; /* Space between flag and text */
+  object-fit: contain;
+}
+
+.lang_buttons button {
+  background: transparent;
+  border: 1px solid #848688;
+  color: #dddddd;
+  padding: 5px 12px;
+  cursor: pointer;
+  display: flex;       /* Ensures icon and text are centered */
+  align-items: center; 
+  font-size: 13px;
+  border-radius: 3px;
+}

@@ -1,0 +1,105 @@
+.lower_header {
+  background-color: #232f3e;
+  color: white;
+  height: 39px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  font-family: Arial, sans-serif;
+  overflow-x: auto; /* Allows horizontal scroll on very small screens */
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+  scrollbar-width: none; /* Hide scrollbar on Firefox */
+}
+
+/* Hide scrollbar on Chrome/Safari */
+.lower_header::-webkit-scrollbar {
+  display: none;
+}
+
+.nav_list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  width: 100%;
+}
+
+.nav_item, .all_menu {
+  display: flex;
+  align-items: center;
+  padding: 8px 9px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.all_menu {
+  font-weight: 700;
+  gap: 3px;
+}
+
+/* Hover effect */
+.nav_item:hover, .all_menu:hover {
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+}
+
+/* Tablet - Medium screens */
+@media screen and (max-width: 1100px) {
+  .nav_item:nth-child(n+8) {  /* Hide from 8th item onward */
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .nav_item:nth-child(n+7) {  /* Hide from 7th item onward */
+    display: none;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .nav_item:nth-child(n+6) {  /* Hide from 6th item onward */
+    display: none;
+  }
+}
+
+/* Mobile - Small screens */
+@media screen and (max-width: 600px) {
+  .nav_item:nth-child(n+5) {  /* Hide from 5th item onward */
+    display: none;
+  }
+  
+  .all_menu {
+    padding: 8px 5px;
+    font-size: 13px;
+  }
+  
+  .nav_item {
+    padding: 8px 5px;
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .nav_item:nth-child(n+4) {  /* Hide from 4th item onward */
+    display: none;
+  }
+  
+  .all_menu span {
+    font-size: 12px;
+  }
+  
+  .lower_header {
+    padding: 0 5px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .nav_item:nth-child(n+3) {  
+    display: none;
+  }
+}

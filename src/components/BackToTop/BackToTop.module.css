@@ -1,0 +1,28 @@
+.back_to_top {
+  /* Dark background to match the footer branding */
+  background-color: #37475a;
+  color: #ffffff;
+  
+  /* Full-width block appearance */
+  width: 100%;
+  padding: 15px 0;
+  border: none;
+  cursor: pointer;
+  
+  /* Text styling */
+  font-size: 13px;
+  font-weight: 500;
+  text-align: center;
+  
+  /* Smooth transition for interaction */
+  transition: background-color 0.2s ease;
+}
+
+.back_to_top:hover {
+  /* Slightly lighter shade for hover feedback */
+  background-color: #485769;
+}
+
+.back_to_top:active {
+  background-color: #2b3948;
+}

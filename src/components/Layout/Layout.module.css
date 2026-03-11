@@ -1,0 +1,11 @@
+/* Layout.module.css */
+.sticky_header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    /* Set background to match your site header color */
+    background-color: white; 
+    /* Optional: add a subtle shadow to indicate it's floating */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+}
+

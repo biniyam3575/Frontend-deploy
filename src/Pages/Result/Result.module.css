@@ -1,0 +1,27 @@
+.results_container {
+    padding: 20px;
+    background-color: #f7f7f7;
+    min-height: 80vh; /* Keeps footer pinned if items are still loading */
+}
+
+.results_header {
+    padding: 20px 30px;
+}
+
+.results_header h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.results_header p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.products_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 10px;
+}

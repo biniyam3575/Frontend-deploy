@@ -1,0 +1,8 @@
+.loader_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Use 'flex: 1' to make sure the loader takes up the full available area */
+    flex: 1; 
+    min-height: 400px; 
+}

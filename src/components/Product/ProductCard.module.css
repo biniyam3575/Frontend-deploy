@@ -1,0 +1,93 @@
+.card_container {
+    background: white;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    height: 320px; /* Fixed height forces uniform row alignment */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card_container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card_container img {
+    width: 100%;
+    height: 140px; 
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.card_details {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Fills empty space in the card */
+}
+
+.card_details h3 {
+    font-size: 13px;
+    line-height: 1.3;
+    margin-bottom: 8px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Truncates long titles */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.rating_container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: auto; /* Pins the rating/price section to the bottom */
+    margin-bottom: 10px;
+}
+
+.price_and_button {
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.button {
+    background-color: #f7ca00;
+    border: 1px solid #f2c200;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 12px;
+    opacity: 0; /* Hidden by default */
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+}
+
+.card_container:hover .button {
+    opacity: 1;
+    visibility: visible;
+}
+.card_link {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer; /* This gives you the hand icon */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Ensure the container doesn't look weird as a link */
+.card_container {
+    /* ... keep your existing styles ... */
+    cursor: pointer; /* Add this to the container if you want the whole card clickable */
+}
+
+/* Override link styles if needed */
+.card_link h3 {
+    color: #000;
+}
